@@ -35,4 +35,4 @@ RUN apt-get clean && rm -rf /opt/vcpe-hub.zip /opt/rpc-ryu.zip
 # Define working directory.
 WORKDIR /opt/ryu
 
-CMD ["DEBUG=rpc-ryu:*", "node", "../rpc-ryu/bin/www"]
+CMD ["DEBUG=rpc-ryu:*", "node", "./rpc-ryu/bin/www"]
