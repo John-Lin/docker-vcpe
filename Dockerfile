@@ -27,7 +27,7 @@ RUN wget -O /opt/vcpe-hub.zip "https://github.com/vcpe-io/vcpe-hub/archive/maste
     mv /opt/vcpe-hub-master /opt/ryu
 
 # vCPE hub dependencies package
-RUN pip install -U networkx numpy scipy
+RUN pip install -U networkx numpy scipy requests
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /opt/vcpe-hub.zip /opt/rpc-ryu.zip
